@@ -1,0 +1,14 @@
+name: rag-auto
+version: 0.1.0
+description: >-
+  Automatic LangGraph evidence retrieval for Hermes turns. A pre_llm_call gate
+  (profile allowlist, deterministic eligibility, turn/session budget, circuit
+  breaker, dedup) injects a bounded untrusted-data evidence block, and the same
+  plugin registers the explicit rag_answer tool. Read-only, loopback-only, no
+  credentials, fail-open with visible metrics.
+author: "Hermes developer"
+kind: standalone
+provides_tools:
+  - rag_answer
+provides_hooks:
+  - pre_llm_call

@@ -1,0 +1,20 @@
+{
+  "schema": "rag-evidence-graph/study/redaction-report/1",
+  "raw_root": "<withheld>",
+  "method": "whitelist: each published summary is built field by field from the raw capture, so private fields are never copied rather than deleted. The counts below are items deliberately left out.",
+  "withheld": {
+    "A_identifier_records": 60,
+    "B_citation_records": 55,
+    "employer_names_in_query_text": 4,
+    "retrieved_snippets": 55,
+    "source_object_names": 39
+  },
+  "withheld_total": 213,
+  "guards": [
+    "source-object identifiers absent",
+    "source-system URLs absent",
+    "host filesystem paths absent",
+    "employer names absent; role-lookup query text carries employer_N labels only",
+    "forbidden keys absent at every depth"
+  ]
+}

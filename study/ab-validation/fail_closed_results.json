@@ -1,0 +1,297 @@
+{
+  "generated_at_utc": "2026-10-14T17:55:12Z",
+  "cases": [
+    {
+      "case": "FC1_B_bare_body_no_wrapper",
+      "method": "POST",
+      "url": "http://127.0.0.1:8791/rag_answer",
+      "request_body": {
+        "query": "Python backend"
+      },
+      "http": 400,
+      "ms": 41.09,
+      "ok": false,
+      "status": "invalid_request",
+      "error": "request must be exactly {'rag_answer': {...}}",
+      "error_class": "contract",
+      "error_class_present": true,
+      "synthesis": null
+    },
+    {
+      "case": "FC1b_A_bare_body_no_wrapper",
+      "method": "POST",
+      "url": "http://127.0.0.1:8788/knowledge_search",
+      "request_body": {
+        "query": "Python backend"
+      },
+      "http": 400,
+      "ms": 1.77,
+      "ok": false,
+      "status": null,
+      "error": "request must be exactly {'knowledge_search': {...}}",
+      "error_class": "contract",
+      "error_class_present": true,
+      "synthesis": null
+    },
+    {
+      "case": "FC2_B_nonexistent_run_id",
+      "method": "GET",
+      "url": "http://127.0.0.1:8791/rag_run_status?run_id=does-not-exist-abc123",
+      "request_body": null,
+      "http": 404,
+      "ms": 1.21,
+      "ok": false,
+      "status": null,
+      "error": "unknown run_id",
+      "error_class": "not_found",
+      "error_class_present": true,
+      "synthesis": null
+    },
+    {
+      "case": "FC3_B_empty_result_query",
+      "method": "POST",
+      "url": "http://127.0.0.1:8791/rag_answer",
+      "request_body": {
+        "rag_answer": {
+          "query": "zzqqx flurblewump 99213 nonexistent",
+          "mode": "keyword",
+          "top_k": 5
+        }
+      },
+      "http": 200,
+      "ms": 3.72,
+      "ok": false,
+      "status": "no_evidence",
+      "error": "retrieval returned no candidates",
+      "error_class": "retrieval",
+      "error_class_present": true,
+      "synthesis": null
+    },
+    {
+      "case": "FC4_B_identity_override",
+      "method": "POST",
+      "url": "http://127.0.0.1:8791/rag_answer",
+      "request_body": {
+        "rag_answer": {
+          "query": "Python",
+          "principal": "owner"
+        }
+      },
+      "http": 400,
+      "ms": 19.55,
+      "ok": false,
+      "status": "invalid_request",
+      "error": "field 'principal' is not permitted: access identity is resolved server-side and cannot be supplied by the caller",
+      "error_class": "contract",
+      "error_class_present": true,
+      "synthesis": null
+    },
+    {
+      "case": "FC5_B_forbidden_token",
+      "method": "POST",
+      "url": "http://127.0.0.1:8791/rag_answer",
+      "request_body": {
+        "rag_answer": {
+          "query": "Python",
+          "workflowId": "abc"
+        }
+      },
+      "http": 400,
+      "ms": 15.74,
+      "ok": false,
+      "status": "invalid_request",
+      "error": "field 'workflowId' is not permitted on the read-only boundary",
+      "error_class": "contract",
+      "error_class_present": true,
+      "synthesis": null
+    },
+    {
+      "case": "FC6_B_extra_top_key",
+      "method": "POST",
+      "url": "http://127.0.0.1:8791/rag_answer",
+      "request_body": {
+        "rag_answer": {
+          "query": "Python"
+        },
+        "workflow": {
+          "id": "x"
+        }
+      },
+      "http": 400,
+      "ms": 15.23,
+      "ok": false,
+      "status": "invalid_request",
+      "error": "only the 'rag_answer' key is allowed, got ['rag_answer', 'workflow']",
+      "error_class": "contract",
+      "error_class_present": true,
+      "synthesis": null
+    },
+    {
+      "case": "FC7_B_missing_query",
+      "method": "POST",
+      "url": "http://127.0.0.1:8791/rag_answer",
+      "request_body": {
+        "rag_answer": {}
+      },
+      "http": 400,
+      "ms": 13.78,
+      "ok": false,
+      "status": "invalid_request",
+      "error": "query must be a non-empty string",
+      "error_class": "contract",
+      "error_class_present": true,
+      "synthesis": null
+    },
+    {
+      "case": "FC8_B_blank_query",
+      "method": "POST",
+      "url": "http://127.0.0.1:8791/rag_answer",
+      "request_body": {
+        "rag_answer": {
+          "query": "   "
+        }
+      },
+      "http": 400,
+      "ms": 15.03,
+      "ok": false,
+      "status": "invalid_request",
+      "error": "query must be a non-empty string",
+      "error_class": "contract",
+      "error_class_present": true,
+      "synthesis": null
+    },
+    {
+      "case": "FC9_B_unknown_filter",
+      "method": "POST",
+      "url": "http://127.0.0.1:8791/rag_answer",
+      "request_body": {
+        "rag_answer": {
+          "query": "Python",
+          "filters": {
+            "collection": "x"
+          }
+        }
+      },
+      "http": 400,
+      "ms": 12.45,
+      "ok": false,
+      "status": "invalid_request",
+      "error": "field 'collection' is not permitted: access identity is resolved server-side and cannot be supplied by the caller",
+      "error_class": "contract",
+      "error_class_present": true,
+      "synthesis": null
+    },
+    {
+      "case": "FC10_B_bad_mode",
+      "method": "POST",
+      "url": "http://127.0.0.1:8791/rag_answer",
+      "request_body": {
+        "rag_answer": {
+          "query": "Python",
+          "mode": "semantic"
+        }
+      },
+      "http": 400,
+      "ms": 13.1,
+      "ok": false,
+      "status": "invalid_request",
+      "error": "mode must be one of hybrid|vector|keyword",
+      "error_class": "contract",
+      "error_class_present": true,
+      "synthesis": null
+    },
+    {
+      "case": "FC11_B_top_k_out_of_range",
+      "method": "POST",
+      "url": "http://127.0.0.1:8791/rag_answer",
+      "request_body": {
+        "rag_answer": {
+          "query": "Python",
+          "top_k": 99
+        }
+      },
+      "http": 400,
+      "ms": 12.64,
+      "ok": false,
+      "status": "invalid_request",
+      "error": "top_k must be an integer in 1..20",
+      "error_class": "contract",
+      "error_class_present": true,
+      "synthesis": null
+    },
+    {
+      "case": "FC12_B_PUT_method",
+      "method": "PUT",
+      "url": "http://127.0.0.1:8791/rag_answer",
+      "request_body": {
+        "rag_answer": {
+          "query": "Python"
+        }
+      },
+      "http": 405,
+      "ms": 1.21,
+      "ok": false,
+      "status": null,
+      "error": "write methods are not available",
+      "error_class": null,
+      "error_class_present": false,
+      "synthesis": null
+    },
+    {
+      "case": "FC13_B_run_status_missing_run_id",
+      "method": "GET",
+      "url": "http://127.0.0.1:8791/rag_run_status",
+      "request_body": null,
+      "http": 400,
+      "ms": 1.23,
+      "ok": false,
+      "status": null,
+      "error": "run_id is required",
+      "error_class": "contract",
+      "error_class_present": true,
+      "synthesis": null
+    },
+    {
+      "case": "FC14_B_rag_answer_GET_method",
+      "method": "GET",
+      "url": "http://127.0.0.1:8791/rag_answer",
+      "request_body": null,
+      "http": 404,
+      "ms": 0.96,
+      "ok": false,
+      "status": null,
+      "error": "not found",
+      "error_class": null,
+      "error_class_present": false,
+      "synthesis": null
+    }
+  ],
+  "idempotency": {
+    "run_id": "ab-audit-replay-001",
+    "first": {
+      "status": "ok",
+      "replayed": false,
+      "n": 3,
+      "fingerprint": "sha256:2c4511f23771532f9b98748f0bd3e4be74611f00e716a0de161601fd5f20b8e5"
+    },
+    "identical_replay": {
+      "status": "ok",
+      "replayed": true,
+      "n": 3,
+      "fingerprint": "sha256:2c4511f23771532f9b98748f0bd3e4be74611f00e716a0de161601fd5f20b8e5"
+    },
+    "different_request_same_id": {
+      "status": "ok",
+      "replayed": false,
+      "n": 3,
+      "fingerprint": "sha256:bbb60f93685c8a69591bef8c1fd5c4b16e494b32c0f76759439f823b7390353d"
+    },
+    "run_status_readback": {
+      "http": 200,
+      "status": "ok",
+      "completed": true,
+      "query": "Terraform infrastructure as code",
+      "n": 3
+    }
+  }
+}

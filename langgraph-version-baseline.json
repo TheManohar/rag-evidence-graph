@@ -1,0 +1,50 @@
+{
+  "schema": "langgraph-version-baseline/1",
+  "recorded_at": "2026-10-14T17:57:40Z",
+  "recorded_from": {
+    "service": "langgraph-rag.service",
+    "source": "langgraph-rag.service ExecStart (live unit)",
+    "interpreter": "/nix/store/x5rjibkhymkgpf997r7bh0w0qjrkhhfp-python3-3.14.7-env/bin/python3",
+    "env_path": "/nix/store/x5rjibkhymkgpf997r7bh0w0qjrkhhfp-python3-3.14.7-env",
+    "env_drv": "/nix/store/6g9gqvbpab48znfpfngnw9rarwx5hqw5-python3-3.14.7-env.drv",
+    "graph_source_tree": "/nix/store/9l8zkqqb0ccqdxl7h0v2kmnf6r2jmhs9-langgraph-rag-tree",
+    "generation": "/nix/store/z2k6kbvpwl3v8pax4f1ljcrlkp5lls7w-nixos-system-netcup-hermes-26.11.20260905.c043004",
+    "nixpkgs_rev": "c043004d1c6985732bcc1cbc5a9c9aecbbb4e0f0",
+    "baseline_path": "/etc/nixos/infrastructure/nixos/modules/langgraph-rag/langgraph-version-baseline.json"
+  },
+  "expected": {
+    "langgraph": "1.2.10",
+    "langgraph_checkpoint": "4.2.0",
+    "langgraph_checkpoint_sqlite": "3.1.1",
+    "env_path": "/nix/store/x5rjibkhymkgpf997r7bh0w0qjrkhhfp-python3-3.14.7-env",
+    "env_drv": "/nix/store/6g9gqvbpab48znfpfngnw9rarwx5hqw5-python3-3.14.7-env.drv"
+  },
+  "informational": {
+    "python_version": "3.14.7",
+    "graph_source_tree": "/nix/store/9l8zkqqb0ccqdxl7h0v2kmnf6r2jmhs9-langgraph-rag-tree",
+    "langgraph_prebuilt": "1.1.0",
+    "langgraph_sdk": "0.4.2"
+  },
+  "reverification": {
+    "verified_at": "2026-10-14T17:57:40Z",
+    "tool": "scripts/langgraph-reverify (runs all three steps, reports PASS/FAIL per step)",
+    "suite": "139 passed",
+    "suite_expect": "139 passed — canonical pass count of the reviewed suite",
+    "suite_env": "/nix/store/1czlqbkcgj72nn4rcyvrig9gm7rqrwyf-python3-3.14.7-env",
+    "suite_env_source": "nix build --impure --expr 'pkgs.python3.withPackages (ps: [ ps.pytest ps.langgraph ps.langgraph-checkpoint-sqlite ])' with pkgs from the flake's locked nixpkgs",
+    "suite_command": "cd /etc/nixos && env -u PYTHONPATH \"$TEST_ENV/bin/python3\" -m pytest infrastructure/nixos/modules/langgraph-rag/tests -o addopts=\"\" -q",
+    "suite_note": "pyproject sets addopts=-q, so a second -q suppresses the summary line; -o addopts=\"\" restores it",
+    "fresh_process_import": "langgraph 1.2.10",
+    "fresh_process_command": "env -u PYTHONPATH /nix/store/x5rjibkhymkgpf997r7bh0w0qjrkhhfp-python3-3.14.7-env/bin/python3 -c \"from langgraph.graph import StateGraph; from langgraph.checkpoint.memory import InMemorySaver; import langgraph.version as v; print(v.__version__)\"",
+    "smoke": "status=ok ok=True evidence=1 grounded=1 replayed=False",
+    "smoke_note": "offline, fake retrieval client, in-memory checkpointer; no network, no index access"
+  },
+  "nixpkgs_rev": "c043004d1c6985732bcc1cbc5a9c9aecbbb4e0f0",
+  "notes": [
+    "Reviewed baseline for the LangGraph RAG graph runtime: the version set and derivation that langgraph-rag.service actually executes.",
+    "scripts/langgraph-version-watch compares the LIVE runtime against this file and exits 3 (DRIFT) on any change to a key under 'expected'.",
+    "On DRIFT: run scripts/langgraph-reverify. Only if every step passes may this baseline be updated to the new values (add the new versions, env_path, env_drv and the new 'reverification' evidence), and the change committed. If any step fails, do not update the baseline — file a fix task.",
+    "'expected' holds only drift-critical values (versions + env path/derivation). 'informational' values are recorded but never fail the check: the graph source tree changes on every source edit, and a python point release already shows up as a changed env_path.",
+    "The weekly autoUpgrade (Sat 04:00 + 15min jitter, system.autoUpgrade with --refresh) may rebuild the env, so a MATCH here is only as fresh as the last check."
+  ]
+}

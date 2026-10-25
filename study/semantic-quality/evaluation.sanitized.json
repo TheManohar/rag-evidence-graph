@@ -1,0 +1,1423 @@
+{
+  "schema": "rag-evidence-graph/study/semantic-quality/1",
+  "derived_from": "evaluation.json (raw capture withheld)",
+  "note": "Redacted summary; retrieval scores/types and build metrics only.",
+  "metrics": {
+    "model_load_s": 0.2719774739816785,
+    "embedding_build_s": 24.999273755121976,
+    "collection_write_s": 0.7841770881786942,
+    "index_build_s": 25.78345084330067,
+    "points": 383,
+    "sources": 185,
+    "max_rss_kib": 360292,
+    "content_v2_unchanged": true,
+    "threshold_frozen_before_measurement": 0.35
+  },
+  "rows": [
+    {
+      "id": "Q1",
+      "class": "candidate_facts",
+      "query": "Python backend API development",
+      "mode": "hybrid",
+      "top_k": 5,
+      "filters": {},
+      "before": {
+        "incumbent_v1": {
+          "count": 5,
+          "scores": [
+            0.031025,
+            0.03101,
+            0.03031,
+            0.016393,
+            0.016393
+          ],
+          "types": [
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening"
+          ],
+          "latency_ms": 19.458007998764515,
+          "relevance_signal": null
+        },
+        "coverage_v2": {
+          "count": 5,
+          "scores": [
+            0.016393,
+            0.016393,
+            0.016129,
+            0.016129,
+            0.015873
+          ],
+          "types": [
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening"
+          ],
+          "latency_ms": 13.723942916840315,
+          "relevance_signal": null
+        }
+      },
+      "after": {
+        "count": 5,
+        "scores": [
+          0.553109,
+          0.530529,
+          0.493487,
+          0.520636,
+          0.48509
+        ],
+        "types": [
+          "job_opening",
+          "job_opening",
+          "job_opening",
+          "job_opening",
+          "job_opening"
+        ],
+        "bands": [
+          "adjacent",
+          "adjacent",
+          "adjacent",
+          "adjacent",
+          "adjacent"
+        ],
+        "relevance": {
+          "band": "adjacent",
+          "threshold": 0.35,
+          "high_threshold": 0.6,
+          "support": "not_assessed",
+          "scope": "topical_similarity_not_entailment"
+        },
+        "latency_ms_samples": [
+          121.35006673634052,
+          115.92698516324162,
+          113.77125233411789
+        ],
+        "latency_ms_median": 115.92698516324162,
+        "ungated_max_cosine": 0.5531085931631017
+      }
+    },
+    {
+      "id": "Q2",
+      "class": "candidate_facts",
+      "query": "SQL ETL data pipeline experience",
+      "mode": "hybrid",
+      "top_k": 5,
+      "filters": {},
+      "before": {
+        "incumbent_v1": {
+          "count": 5,
+          "scores": [
+            0.031319,
+            0.016393,
+            0.016129,
+            0.016129,
+            0.015873
+          ],
+          "types": [
+            "job_opening",
+            "area",
+            "job_opening",
+            "job_opening",
+            "job_opening"
+          ],
+          "latency_ms": 8.574429899454117,
+          "relevance_signal": null
+        },
+        "coverage_v2": {
+          "count": 5,
+          "scores": [
+            0.032018,
+            0.030077,
+            0.016393,
+            0.016129,
+            0.016129
+          ],
+          "types": [
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "area"
+          ],
+          "latency_ms": 15.920303761959076,
+          "relevance_signal": null
+        }
+      },
+      "after": {
+        "count": 5,
+        "scores": [
+          0.505823,
+          0.491183,
+          0.502917,
+          0.473936,
+          0.461668
+        ],
+        "types": [
+          "job_opening",
+          "job_opening",
+          "job_opening",
+          "job_opening",
+          "job_opening"
+        ],
+        "bands": [
+          "adjacent",
+          "adjacent",
+          "adjacent",
+          "adjacent",
+          "adjacent"
+        ],
+        "relevance": {
+          "band": "adjacent",
+          "threshold": 0.35,
+          "high_threshold": 0.6,
+          "support": "not_assessed",
+          "scope": "topical_similarity_not_entailment"
+        },
+        "latency_ms_samples": [
+          122.61576717719436,
+          106.6204602830112,
+          107.91378188878298
+        ],
+        "latency_ms_median": 107.91378188878298,
+        "ungated_max_cosine": 0.5058229401321916
+      }
+    },
+    {
+      "id": "Q3",
+      "class": "job_requirement",
+      "query": "Kafka event-driven systems",
+      "mode": "hybrid",
+      "top_k": 5,
+      "filters": {},
+      "before": {
+        "incumbent_v1": {
+          "count": 5,
+          "scores": [
+            0.032522,
+            0.031754,
+            0.030777,
+            0.03009,
+            0.016393
+          ],
+          "types": [
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening"
+          ],
+          "latency_ms": 10.807982180267572,
+          "relevance_signal": null
+        },
+        "coverage_v2": {
+          "count": 5,
+          "scores": [
+            0.032522,
+            0.016393,
+            0.016129,
+            0.015873,
+            0.015873
+          ],
+          "types": [
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening"
+          ],
+          "latency_ms": 15.312275849282742,
+          "relevance_signal": null
+        }
+      },
+      "after": {
+        "count": 1,
+        "scores": [
+          0.400569
+        ],
+        "types": [
+          "job_opening"
+        ],
+        "bands": [
+          "adjacent"
+        ],
+        "relevance": {
+          "band": "adjacent",
+          "threshold": 0.35,
+          "high_threshold": 0.6,
+          "support": "not_assessed",
+          "scope": "topical_similarity_not_entailment"
+        },
+        "latency_ms_samples": [
+          103.84541703388095,
+          106.02517705410719,
+          103.44662936404347
+        ],
+        "latency_ms_median": 103.84541703388095,
+        "ungated_max_cosine": 0.4005685081251296
+      }
+    },
+    {
+      "id": "Q4",
+      "class": "job_requirement",
+      "query": "Terraform infrastructure as code",
+      "mode": "hybrid",
+      "top_k": 5,
+      "filters": {},
+      "before": {
+        "incumbent_v1": {
+          "count": 5,
+          "scores": [
+            0.032018,
+            0.016393,
+            0.016129,
+            0.016129,
+            0.015873
+          ],
+          "types": [
+            "job_opening",
+            "job_opening",
+            "project",
+            "bookmark",
+            "job_opening"
+          ],
+          "latency_ms": 9.013545699417591,
+          "relevance_signal": null
+        },
+        "coverage_v2": {
+          "count": 5,
+          "scores": [
+            0.032522,
+            0.030835,
+            0.030536,
+            0.016393,
+            0.015873
+          ],
+          "types": [
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening"
+          ],
+          "latency_ms": 13.419763650745153,
+          "relevance_signal": null
+        }
+      },
+      "after": {
+        "count": 5,
+        "scores": [
+          0.53443,
+          0.398924,
+          0.437142,
+          0.52148,
+          0.44654
+        ],
+        "types": [
+          "job_opening",
+          "job_opening",
+          "job_opening",
+          "job_opening",
+          "job_opening"
+        ],
+        "bands": [
+          "adjacent",
+          "adjacent",
+          "adjacent",
+          "adjacent",
+          "adjacent"
+        ],
+        "relevance": {
+          "band": "adjacent",
+          "threshold": 0.35,
+          "high_threshold": 0.6,
+          "support": "not_assessed",
+          "scope": "topical_similarity_not_entailment"
+        },
+        "latency_ms_samples": [
+          110.8549409545958,
+          114.199907053262,
+          115.85722072049975
+        ],
+        "latency_ms_median": 114.199907053262,
+        "ungated_max_cosine": 0.5344295985824736
+      }
+    },
+    {
+      "id": "Q5",
+      "class": "role_lookup",
+      "query": "employer_a senior full-stack engineer python django",
+      "mode": "hybrid",
+      "top_k": 5,
+      "filters": {},
+      "before": {
+        "incumbent_v1": {
+          "count": 5,
+          "scores": [
+            0.032787,
+            0.016129,
+            0.016129,
+            0.015873,
+            0.015873
+          ],
+          "types": [
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening"
+          ],
+          "latency_ms": 10.884448885917664,
+          "relevance_signal": null
+        },
+        "coverage_v2": {
+          "count": 5,
+          "scores": [
+            0.031778,
+            0.016393,
+            0.016129,
+            0.016129,
+            0.015873
+          ],
+          "types": [
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening"
+          ],
+          "latency_ms": 11.932473164051771,
+          "relevance_signal": null
+        }
+      },
+      "after": {
+        "count": 5,
+        "scores": [
+          0.640405,
+          0.696521,
+          0.541124,
+          0.519318,
+          0.512939
+        ],
+        "types": [
+          "job_opening",
+          "job_opening",
+          "job_opening",
+          "job_opening",
+          "job_opening"
+        ],
+        "bands": [
+          "high",
+          "high",
+          "adjacent",
+          "adjacent",
+          "adjacent"
+        ],
+        "relevance": {
+          "band": "high",
+          "threshold": 0.35,
+          "high_threshold": 0.6,
+          "support": "not_assessed",
+          "scope": "topical_similarity_not_entailment"
+        },
+        "latency_ms_samples": [
+          116.9029027223587,
+          116.04859633371234,
+          107.184954918921
+        ],
+        "latency_ms_median": 116.04859633371234,
+        "ungated_max_cosine": 0.6965207004689935
+      }
+    },
+    {
+      "id": "Q6",
+      "class": "role_lookup",
+      "query": "employer_b senior python engineer berlin",
+      "mode": "hybrid",
+      "top_k": 5,
+      "filters": {},
+      "before": {
+        "incumbent_v1": {
+          "count": 5,
+          "scores": [
+            0.031498,
+            0.031281,
+            0.016393,
+            0.016393,
+            0.016129
+          ],
+          "types": [
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "bookmark"
+          ],
+          "latency_ms": 8.658220991492271,
+          "relevance_signal": null
+        },
+        "coverage_v2": {
+          "count": 5,
+          "scores": [
+            0.016393,
+            0.016393,
+            0.016129,
+            0.016129,
+            0.015873
+          ],
+          "types": [
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening"
+          ],
+          "latency_ms": 14.390781987458467,
+          "relevance_signal": null
+        }
+      },
+      "after": {
+        "count": 5,
+        "scores": [
+          0.748949,
+          0.634463,
+          0.592961,
+          0.63251,
+          0.616878
+        ],
+        "types": [
+          "job_opening",
+          "job_opening",
+          "job_opening",
+          "job_opening",
+          "job_opening"
+        ],
+        "bands": [
+          "high",
+          "high",
+          "adjacent",
+          "high",
+          "high"
+        ],
+        "relevance": {
+          "band": "high",
+          "threshold": 0.35,
+          "high_threshold": 0.6,
+          "support": "not_assessed",
+          "scope": "topical_similarity_not_entailment"
+        },
+        "latency_ms_samples": [
+          105.95811810344458,
+          100.92722391709685,
+          102.17873612418771
+        ],
+        "latency_ms_median": 102.17873612418771,
+        "ungated_max_cosine": 0.7489488080468751
+      }
+    },
+    {
+      "id": "Q7",
+      "class": "reference",
+      "query": "Hermes MCP connection test",
+      "mode": "hybrid",
+      "top_k": 5,
+      "filters": {},
+      "before": {
+        "incumbent_v1": {
+          "count": 5,
+          "scores": [
+            0.032787,
+            0.032002,
+            0.031514,
+            0.015873,
+            0.015625
+          ],
+          "types": [
+            "note",
+            "chat_derived",
+            "evidence",
+            "job_opening",
+            "job_opening"
+          ],
+          "latency_ms": 8.525507990270853,
+          "relevance_signal": null
+        },
+        "coverage_v2": {
+          "count": 5,
+          "scores": [
+            0.032787,
+            0.031281,
+            0.016129,
+            0.015873,
+            0.015873
+          ],
+          "types": [
+            "note",
+            "chat_derived",
+            "bookmark",
+            "job_opening",
+            "job_opening"
+          ],
+          "latency_ms": 12.342303991317749,
+          "relevance_signal": null
+        }
+      },
+      "after": {
+        "count": 1,
+        "scores": [
+          0.723856
+        ],
+        "types": [
+          "note"
+        ],
+        "bands": [
+          "high"
+        ],
+        "relevance": {
+          "band": "high",
+          "threshold": 0.35,
+          "high_threshold": 0.6,
+          "support": "not_assessed",
+          "scope": "topical_similarity_not_entailment"
+        },
+        "latency_ms_samples": [
+          100.73668137192726,
+          108.29870495945215,
+          104.29532406851649
+        ],
+        "latency_ms_median": 104.29532406851649,
+        "ungated_max_cosine": 0.7238560973482946
+      }
+    },
+    {
+      "id": "Q8",
+      "class": "filtered_requirements",
+      "query": "Berlin",
+      "mode": "hybrid",
+      "top_k": 5,
+      "filters": {
+        "types": [
+          "job_opening"
+        ]
+      },
+      "before": {
+        "incumbent_v1": {
+          "count": 5,
+          "scores": [
+            0.032018,
+            0.031746,
+            0.030769,
+            0.029631,
+            0.016393
+          ],
+          "types": [
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening"
+          ],
+          "latency_ms": 10.014962870627642,
+          "relevance_signal": null
+        },
+        "coverage_v2": {
+          "count": 5,
+          "scores": [
+            0.032266,
+            0.032018,
+            0.031498,
+            0.030835,
+            0.016129
+          ],
+          "types": [
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening"
+          ],
+          "latency_ms": 16.418613027781248,
+          "relevance_signal": null
+        }
+      },
+      "after": {
+        "count": 5,
+        "scores": [
+          0.451057,
+          0.458346,
+          0.434161,
+          0.494992,
+          0.490644
+        ],
+        "types": [
+          "job_opening",
+          "job_opening",
+          "job_opening",
+          "job_opening",
+          "job_opening"
+        ],
+        "bands": [
+          "adjacent",
+          "adjacent",
+          "adjacent",
+          "adjacent",
+          "adjacent"
+        ],
+        "relevance": {
+          "band": "adjacent",
+          "threshold": 0.35,
+          "high_threshold": 0.6,
+          "support": "not_assessed",
+          "scope": "topical_similarity_not_entailment"
+        },
+        "latency_ms_samples": [
+          76.94276981055737,
+          85.03406122326851,
+          79.15197405964136
+        ],
+        "latency_ms_median": 79.15197405964136,
+        "ungated_max_cosine": 0.4949922447272189
+      }
+    },
+    {
+      "id": "Q9",
+      "class": "negative_control",
+      "query": "zzqqx flurblewump 99213 nonexistent",
+      "mode": "keyword",
+      "top_k": 5,
+      "filters": {},
+      "before": {
+        "incumbent_v1": {
+          "count": 0,
+          "scores": [],
+          "types": [],
+          "latency_ms": 5.468439776450396,
+          "relevance_signal": null
+        },
+        "coverage_v2": {
+          "count": 0,
+          "scores": [],
+          "types": [],
+          "latency_ms": 9.746382012963295,
+          "relevance_signal": null
+        }
+      },
+      "after": {
+        "count": 0,
+        "scores": [],
+        "types": [],
+        "bands": [],
+        "relevance": {
+          "band": "gap",
+          "threshold": 0.35,
+          "high_threshold": 0.6,
+          "support": "not_assessed",
+          "scope": "topical_similarity_not_entailment"
+        },
+        "latency_ms_samples": [
+          109.1228942386806,
+          111.21737118810415,
+          102.27884631603956
+        ],
+        "latency_ms_median": 109.1228942386806,
+        "ungated_max_cosine": 0.2729319198903144
+      }
+    },
+    {
+      "id": "Q10",
+      "class": "negative_control",
+      "query": "zzqqx flurblewump 99213 nonexistent",
+      "mode": "hybrid",
+      "top_k": 5,
+      "filters": {},
+      "before": {
+        "incumbent_v1": {
+          "count": 5,
+          "scores": [
+            0.016393,
+            0.016129,
+            0.015873,
+            0.015625,
+            0.015385
+          ],
+          "types": [
+            "bookmark",
+            "bookmark",
+            "job_opening",
+            "job_opening",
+            "bookmark"
+          ],
+          "latency_ms": 10.502350982278585,
+          "relevance_signal": null
+        },
+        "coverage_v2": {
+          "count": 5,
+          "scores": [
+            0.016393,
+            0.016129,
+            0.015873,
+            0.015625,
+            0.015385
+          ],
+          "types": [
+            "bookmark",
+            "pharmacy",
+            "pharmacy",
+            "job_opening",
+            "task"
+          ],
+          "latency_ms": 12.832956854254007,
+          "relevance_signal": null
+        }
+      },
+      "after": {
+        "count": 0,
+        "scores": [],
+        "types": [],
+        "bands": [],
+        "relevance": {
+          "band": "gap",
+          "threshold": 0.35,
+          "high_threshold": 0.6,
+          "support": "not_assessed",
+          "scope": "topical_similarity_not_entailment"
+        },
+        "latency_ms_samples": [
+          111.3421986810863,
+          110.16191076487303,
+          109.54816313460469
+        ],
+        "latency_ms_median": 110.16191076487303,
+        "ungated_max_cosine": 0.2729319198903144
+      }
+    },
+    {
+      "id": "Q11",
+      "class": "coverage_cap",
+      "query": "Python",
+      "mode": "hybrid",
+      "top_k": 20,
+      "filters": {},
+      "before": {
+        "incumbent_v1": {
+          "count": 15,
+          "scores": [
+            0.032787,
+            0.016129,
+            0.016129,
+            0.015873,
+            0.015873,
+            0.015625,
+            0.015625,
+            0.015385,
+            0.015385,
+            0.015152,
+            0.015152,
+            0.014925,
+            0.014925,
+            0.014706,
+            0.014706
+          ],
+          "types": [
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "bookmark",
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening"
+          ],
+          "latency_ms": 8.048499934375286,
+          "relevance_signal": null
+        },
+        "coverage_v2": {
+          "count": 15,
+          "scores": [
+            0.031054,
+            0.016393,
+            0.016393,
+            0.016129,
+            0.015873,
+            0.015873,
+            0.015625,
+            0.015625,
+            0.015385,
+            0.015385,
+            0.015152,
+            0.015152,
+            0.014925,
+            0.014706,
+            0.014706
+          ],
+          "types": [
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening"
+          ],
+          "latency_ms": 16.232167836278677,
+          "relevance_signal": null
+        }
+      },
+      "after": {
+        "count": 20,
+        "scores": [
+          0.406933,
+          0.390279,
+          0.385805,
+          0.392204,
+          0.474501,
+          0.419372,
+          0.386645,
+          0.427816,
+          0.356799,
+          0.444639,
+          0.374145,
+          0.36379,
+          0.387954,
+          0.376584,
+          0.38528,
+          0.40481,
+          0.362037,
+          0.377334,
+          0.353657,
+          0.35321
+        ],
+        "types": [
+          "job_opening",
+          "job_opening",
+          "job_opening",
+          "job_opening",
+          "bookmark",
+          "job_opening",
+          "job_opening",
+          "job_opening",
+          "job_opening",
+          "job_opening",
+          "job_opening",
+          "job_opening",
+          "job_opening",
+          "job_opening",
+          "job_opening",
+          "job_opening",
+          "job_opening",
+          "evidence",
+          "job_opening",
+          "job_opening"
+        ],
+        "bands": [
+          "adjacent",
+          "adjacent",
+          "adjacent",
+          "adjacent",
+          "adjacent",
+          "adjacent",
+          "adjacent",
+          "adjacent",
+          "adjacent",
+          "adjacent",
+          "adjacent",
+          "adjacent",
+          "adjacent",
+          "adjacent",
+          "adjacent",
+          "adjacent",
+          "adjacent",
+          "adjacent",
+          "adjacent",
+          "adjacent"
+        ],
+        "relevance": {
+          "band": "adjacent",
+          "threshold": 0.35,
+          "high_threshold": 0.6,
+          "support": "not_assessed",
+          "scope": "topical_similarity_not_entailment"
+        },
+        "latency_ms_samples": [
+          98.75641111284494,
+          114.78336807340384,
+          106.7915759049356
+        ],
+        "latency_ms_median": 106.7915759049356,
+        "ungated_max_cosine": 0.4745005240171112
+      }
+    },
+    {
+      "id": "N1",
+      "class": "unrelated",
+      "query": "Underwater elephant dentistry on Neptune",
+      "mode": "hybrid",
+      "top_k": 5,
+      "filters": {},
+      "before": {
+        "incumbent_v1": {
+          "count": 5,
+          "scores": [
+            0.016393,
+            0.016393,
+            0.016129,
+            0.016129,
+            0.015873
+          ],
+          "types": [
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening"
+          ],
+          "latency_ms": 8.81812535226345,
+          "relevance_signal": null
+        },
+        "coverage_v2": {
+          "count": 5,
+          "scores": [
+            0.016393,
+            0.016393,
+            0.016129,
+            0.016129,
+            0.015873
+          ],
+          "types": [
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "bookmark"
+          ],
+          "latency_ms": 13.025996275246143,
+          "relevance_signal": null
+        }
+      },
+      "after": {
+        "count": 0,
+        "scores": [],
+        "types": [],
+        "bands": [],
+        "relevance": {
+          "band": "gap",
+          "threshold": 0.35,
+          "high_threshold": 0.6,
+          "support": "not_assessed",
+          "scope": "topical_similarity_not_entailment"
+        },
+        "latency_ms_samples": [
+          118.2964751496911,
+          117.55458312109113,
+          120.54044613614678
+        ],
+        "latency_ms_median": 118.2964751496911,
+        "ungated_max_cosine": 0.1869843854465496
+      }
+    },
+    {
+      "id": "N2",
+      "class": "unrelated",
+      "query": "quantum chromodynamics quark gluon confinement",
+      "mode": "vector",
+      "top_k": 5,
+      "filters": {},
+      "before": {
+        "incumbent_v1": {
+          "count": 5,
+          "scores": [
+            0.016393,
+            0.016129,
+            0.015873,
+            0.015625,
+            0.015385
+          ],
+          "types": [
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "project",
+            "job_opening"
+          ],
+          "latency_ms": 3.942575305700302,
+          "relevance_signal": null
+        },
+        "coverage_v2": {
+          "count": 5,
+          "scores": [
+            0.016393,
+            0.016129,
+            0.015873,
+            0.015625,
+            0.015385
+          ],
+          "types": [
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "project",
+            "job_opening"
+          ],
+          "latency_ms": 3.624057862907648,
+          "relevance_signal": null
+        }
+      },
+      "after": {
+        "count": 0,
+        "scores": [],
+        "types": [],
+        "bands": [],
+        "relevance": {
+          "band": "gap",
+          "threshold": 0.35,
+          "high_threshold": 0.6,
+          "support": "not_assessed",
+          "scope": "topical_similarity_not_entailment"
+        },
+        "latency_ms_samples": [
+          112.50296793878078,
+          107.9525570385158,
+          114.50440576300025
+        ],
+        "latency_ms_median": 112.50296793878078,
+        "ungated_max_cosine": 0.21173367834398588
+      }
+    },
+    {
+      "id": "N3",
+      "class": "unsupported_candidate",
+      "query": "candidate professional experience as neurosurgeon brain surgery",
+      "mode": "hybrid",
+      "top_k": 5,
+      "filters": {
+        "types": [
+          "candidate",
+          "profile",
+          "evidence"
+        ]
+      },
+      "before": {
+        "incumbent_v1": {
+          "count": 5,
+          "scores": [
+            0.016393,
+            0.016129,
+            0.015873,
+            0.015625,
+            0.015385
+          ],
+          "types": [
+            "profile",
+            "evidence",
+            "evidence",
+            "evidence",
+            "evidence"
+          ],
+          "latency_ms": 5.245143081992865,
+          "relevance_signal": null
+        },
+        "coverage_v2": {
+          "count": 5,
+          "scores": [
+            0.032787,
+            0.030835,
+            0.016129,
+            0.015873,
+            0.015625
+          ],
+          "types": [
+            "candidate",
+            "evidence",
+            "evidence",
+            "evidence",
+            "profile"
+          ],
+          "latency_ms": 6.628856994211674,
+          "relevance_signal": null
+        }
+      },
+      "after": {
+        "count": 0,
+        "scores": [],
+        "types": [],
+        "bands": [],
+        "relevance": {
+          "band": "gap",
+          "threshold": 0.35,
+          "high_threshold": 0.6,
+          "support": "not_assessed",
+          "scope": "topical_similarity_not_entailment"
+        },
+        "latency_ms_samples": [
+          13.774729799479246,
+          12.881179805845022,
+          11.256176047027111
+        ],
+        "latency_ms_median": 12.881179805845022,
+        "ungated_max_cosine": 0.12949143235922386
+      }
+    },
+    {
+      "id": "C1",
+      "class": "candidate_facts_filtered",
+      "query": "Python backend API development",
+      "mode": "hybrid",
+      "top_k": 5,
+      "filters": {
+        "types": [
+          "candidate",
+          "profile",
+          "evidence"
+        ]
+      },
+      "before": {
+        "incumbent_v1": {
+          "count": 5,
+          "scores": [
+            0.016393,
+            0.016129,
+            0.015873,
+            0.015625,
+            0.015385
+          ],
+          "types": [
+            "profile",
+            "evidence",
+            "evidence",
+            "evidence",
+            "evidence"
+          ],
+          "latency_ms": 5.5841500870883465,
+          "relevance_signal": null
+        },
+        "coverage_v2": {
+          "count": 5,
+          "scores": [
+            0.032522,
+            0.032018,
+            0.032002,
+            0.03101,
+            0.030798
+          ],
+          "types": [
+            "profile",
+            "evidence",
+            "candidate",
+            "evidence",
+            "evidence"
+          ],
+          "latency_ms": 6.792940199375153,
+          "relevance_signal": null
+        }
+      },
+      "after": {
+        "count": 3,
+        "scores": [
+          0.380425,
+          0.471484,
+          0.418622
+        ],
+        "types": [
+          "profile",
+          "evidence",
+          "evidence"
+        ],
+        "bands": [
+          "adjacent",
+          "adjacent",
+          "adjacent"
+        ],
+        "relevance": {
+          "band": "adjacent",
+          "threshold": 0.35,
+          "high_threshold": 0.6,
+          "support": "not_assessed",
+          "scope": "topical_similarity_not_entailment"
+        },
+        "latency_ms_samples": [
+          9.817326907068491,
+          11.350905988365412,
+          10.030902922153473
+        ],
+        "latency_ms_median": 10.030902922153473,
+        "ungated_max_cosine": 0.4714836111340555
+      }
+    },
+    {
+      "id": "C2",
+      "class": "candidate_facts_filtered",
+      "query": "SQL ETL data pipeline experience",
+      "mode": "hybrid",
+      "top_k": 5,
+      "filters": {
+        "types": [
+          "candidate",
+          "profile",
+          "evidence"
+        ]
+      },
+      "before": {
+        "incumbent_v1": {
+          "count": 5,
+          "scores": [
+            0.016393,
+            0.016129,
+            0.015873,
+            0.015625,
+            0.015385
+          ],
+          "types": [
+            "profile",
+            "evidence",
+            "evidence",
+            "evidence",
+            "evidence"
+          ],
+          "latency_ms": 7.2302441112697124,
+          "relevance_signal": null
+        },
+        "coverage_v2": {
+          "count": 5,
+          "scores": [
+            0.032258,
+            0.032018,
+            0.032018,
+            0.031746,
+            0.015385
+          ],
+          "types": [
+            "evidence",
+            "profile",
+            "evidence",
+            "candidate",
+            "evidence"
+          ],
+          "latency_ms": 7.481100037693977,
+          "relevance_signal": null
+        }
+      },
+      "after": {
+        "count": 1,
+        "scores": [
+          0.367015
+        ],
+        "types": [
+          "evidence"
+        ],
+        "bands": [
+          "adjacent"
+        ],
+        "relevance": {
+          "band": "adjacent",
+          "threshold": 0.35,
+          "high_threshold": 0.6,
+          "support": "not_assessed",
+          "scope": "topical_similarity_not_entailment"
+        },
+        "latency_ms_samples": [
+          10.709194000810385,
+          10.709204711019993,
+          10.575921274721622
+        ],
+        "latency_ms_median": 10.709194000810385,
+        "ungated_max_cosine": 0.3670151872442017
+      }
+    },
+    {
+      "id": "J1",
+      "class": "job_requirement",
+      "query": "Kafka event-driven systems",
+      "mode": "hybrid",
+      "top_k": 5,
+      "filters": {
+        "types": [
+          "job_opening"
+        ]
+      },
+      "before": {
+        "incumbent_v1": {
+          "count": 5,
+          "scores": [
+            0.032522,
+            0.032522,
+            0.031498,
+            0.03101,
+            0.030077
+          ],
+          "types": [
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening"
+          ],
+          "latency_ms": 10.795689653605223,
+          "relevance_signal": null
+        },
+        "coverage_v2": {
+          "count": 5,
+          "scores": [
+            0.032522,
+            0.032002,
+            0.016393,
+            0.015873,
+            0.015625
+          ],
+          "types": [
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening",
+            "job_opening"
+          ],
+          "latency_ms": 16.037988010793924,
+          "relevance_signal": null
+        }
+      },
+      "after": {
+        "count": 1,
+        "scores": [
+          0.400569
+        ],
+        "types": [
+          "job_opening"
+        ],
+        "bands": [
+          "adjacent"
+        ],
+        "relevance": {
+          "band": "adjacent",
+          "threshold": 0.35,
+          "high_threshold": 0.6,
+          "support": "not_assessed",
+          "scope": "topical_similarity_not_entailment"
+        },
+        "latency_ms_samples": [
+          83.76021636649966,
+          80.92051977291703,
+          85.223070345819
+        ],
+        "latency_ms_median": 83.76021636649966,
+        "ungated_max_cosine": 0.4005685081251296
+      }
+    }
+  ]
+}

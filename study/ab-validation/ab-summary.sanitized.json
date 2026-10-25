@@ -1,0 +1,683 @@
+{
+  "schema": "rag-evidence-graph/study/ab-summary/1",
+  "derived_from": "ab_results.json (raw capture withheld)",
+  "generated_at_utc": "2026-10-14T17:55:07Z",
+  "note": "Redacted summary. Source-object identifiers, retrieved snippets and source-system URLs are dropped; per-query metrics and outcomes kept.",
+  "queries": [
+    {
+      "query_id": "Q1",
+      "class": "candidate_facts",
+      "query": "Python backend API development",
+      "mode": "hybrid",
+      "top_k": 5,
+      "filters": {},
+      "A": {
+        "http": 200,
+        "ok": true,
+        "count": 5,
+        "client_latency_ms": 39.25,
+        "reported_latency_ms": 9.41,
+        "index_version": "rag-v1",
+        "mode": "hybrid",
+        "quarantined": 0,
+        "error_class": null
+      },
+      "B": {
+        "http": 200,
+        "ok": true,
+        "status": "ok",
+        "citation_count": 5,
+        "client_latency_ms": 74.32,
+        "reported_latency_ms": 60.97,
+        "index_version": "rag-v1",
+        "error": null,
+        "error_class": null,
+        "synthesis": null,
+        "replayed": false,
+        "freshness_status": "fresh",
+        "freshness_fresh": true,
+        "freshness_reasons": [],
+        "validation": {
+          "candidates": 5,
+          "grounded": 5,
+          "quarantined": 0,
+          "problems": []
+        },
+        "retrieval": {
+          "count": 5,
+          "mode": "hybrid",
+          "index_version": "rag-v1",
+          "quarantined": 0,
+          "latency_ms": 8.48,
+          "retries": {
+            "requests": 72,
+            "retried": 0,
+            "failed": 0
+          }
+        },
+        "quarantined": []
+      },
+      "comparison": {
+        "overlap": 5,
+        "a_only": 0,
+        "b_only": 0,
+        "identical_order_and_set": true,
+        "scores_identical": true
+      }
+    },
+    {
+      "query_id": "Q2",
+      "class": "candidate_facts",
+      "query": "SQL ETL data pipeline experience",
+      "mode": "hybrid",
+      "top_k": 5,
+      "filters": {},
+      "A": {
+        "http": 200,
+        "ok": true,
+        "count": 5,
+        "client_latency_ms": 11.9,
+        "reported_latency_ms": 10.06,
+        "index_version": "rag-v1",
+        "mode": "hybrid",
+        "quarantined": 0,
+        "error_class": null
+      },
+      "B": {
+        "http": 200,
+        "ok": true,
+        "status": "ok",
+        "citation_count": 5,
+        "client_latency_ms": 36.25,
+        "reported_latency_ms": 26.91,
+        "index_version": "rag-v1",
+        "error": null,
+        "error_class": null,
+        "synthesis": null,
+        "replayed": false,
+        "freshness_status": "fresh",
+        "freshness_fresh": true,
+        "freshness_reasons": [],
+        "validation": {
+          "candidates": 5,
+          "grounded": 5,
+          "quarantined": 0,
+          "problems": []
+        },
+        "retrieval": {
+          "count": 5,
+          "mode": "hybrid",
+          "index_version": "rag-v1",
+          "quarantined": 0,
+          "latency_ms": 9.8,
+          "retries": {
+            "requests": 76,
+            "retried": 0,
+            "failed": 0
+          }
+        },
+        "quarantined": []
+      },
+      "comparison": {
+        "overlap": 5,
+        "a_only": 0,
+        "b_only": 0,
+        "identical_order_and_set": true,
+        "scores_identical": true
+      }
+    },
+    {
+      "query_id": "Q3",
+      "class": "job_requirements_skills",
+      "query": "Kafka event-driven systems",
+      "mode": "hybrid",
+      "top_k": 5,
+      "filters": {},
+      "A": {
+        "http": 200,
+        "ok": true,
+        "count": 5,
+        "client_latency_ms": 11.62,
+        "reported_latency_ms": 9.74,
+        "index_version": "rag-v1",
+        "mode": "hybrid",
+        "quarantined": 0,
+        "error_class": null
+      },
+      "B": {
+        "http": 200,
+        "ok": true,
+        "status": "ok",
+        "citation_count": 5,
+        "client_latency_ms": 37.04,
+        "reported_latency_ms": 26.91,
+        "index_version": "rag-v1",
+        "error": null,
+        "error_class": null,
+        "synthesis": null,
+        "replayed": false,
+        "freshness_status": "fresh",
+        "freshness_fresh": true,
+        "freshness_reasons": [],
+        "validation": {
+          "candidates": 5,
+          "grounded": 5,
+          "quarantined": 0,
+          "problems": []
+        },
+        "retrieval": {
+          "count": 5,
+          "mode": "hybrid",
+          "index_version": "rag-v1",
+          "quarantined": 0,
+          "latency_ms": 9.06,
+          "retries": {
+            "requests": 80,
+            "retried": 0,
+            "failed": 0
+          }
+        },
+        "quarantined": []
+      },
+      "comparison": {
+        "overlap": 5,
+        "a_only": 0,
+        "b_only": 0,
+        "identical_order_and_set": true,
+        "scores_identical": true
+      }
+    },
+    {
+      "query_id": "Q4",
+      "class": "job_requirements_skills",
+      "query": "Terraform infrastructure as code",
+      "mode": "hybrid",
+      "top_k": 5,
+      "filters": {},
+      "A": {
+        "http": 200,
+        "ok": true,
+        "count": 5,
+        "client_latency_ms": 10.98,
+        "reported_latency_ms": 9.12,
+        "index_version": "rag-v1",
+        "mode": "hybrid",
+        "quarantined": 0,
+        "error_class": null
+      },
+      "B": {
+        "http": 200,
+        "ok": true,
+        "status": "ok",
+        "citation_count": 5,
+        "client_latency_ms": 35.88,
+        "reported_latency_ms": 26.36,
+        "index_version": "rag-v1",
+        "error": null,
+        "error_class": null,
+        "synthesis": null,
+        "replayed": false,
+        "freshness_status": "fresh",
+        "freshness_fresh": true,
+        "freshness_reasons": [],
+        "validation": {
+          "candidates": 5,
+          "grounded": 5,
+          "quarantined": 0,
+          "problems": []
+        },
+        "retrieval": {
+          "count": 5,
+          "mode": "hybrid",
+          "index_version": "rag-v1",
+          "quarantined": 0,
+          "latency_ms": 9.27,
+          "retries": {
+            "requests": 84,
+            "retried": 0,
+            "failed": 0
+          }
+        },
+        "quarantined": []
+      },
+      "comparison": {
+        "overlap": 5,
+        "a_only": 0,
+        "b_only": 0,
+        "identical_order_and_set": true,
+        "scores_identical": true
+      }
+    },
+    {
+      "query_id": "Q5",
+      "class": "company_role_lookup",
+      "query": "employer_a senior full-stack engineer python django",
+      "mode": "hybrid",
+      "top_k": 5,
+      "filters": {},
+      "A": {
+        "http": 200,
+        "ok": true,
+        "count": 5,
+        "client_latency_ms": 10.83,
+        "reported_latency_ms": 8.61,
+        "index_version": "rag-v1",
+        "mode": "hybrid",
+        "quarantined": 0,
+        "error_class": null
+      },
+      "B": {
+        "http": 200,
+        "ok": true,
+        "status": "ok",
+        "citation_count": 5,
+        "client_latency_ms": 40.19,
+        "reported_latency_ms": 29.41,
+        "index_version": "rag-v1",
+        "error": null,
+        "error_class": null,
+        "synthesis": null,
+        "replayed": false,
+        "freshness_status": "fresh",
+        "freshness_fresh": true,
+        "freshness_reasons": [],
+        "validation": {
+          "candidates": 5,
+          "grounded": 5,
+          "quarantined": 0,
+          "problems": []
+        },
+        "retrieval": {
+          "count": 5,
+          "mode": "hybrid",
+          "index_version": "rag-v1",
+          "quarantined": 0,
+          "latency_ms": 10.05,
+          "retries": {
+            "requests": 88,
+            "retried": 0,
+            "failed": 0
+          }
+        },
+        "quarantined": []
+      },
+      "comparison": {
+        "overlap": 5,
+        "a_only": 0,
+        "b_only": 0,
+        "identical_order_and_set": true,
+        "scores_identical": true
+      }
+    },
+    {
+      "query_id": "Q6",
+      "class": "company_role_lookup",
+      "query": "employer_b senior python engineer berlin",
+      "mode": "hybrid",
+      "top_k": 5,
+      "filters": {},
+      "A": {
+        "http": 200,
+        "ok": true,
+        "count": 5,
+        "client_latency_ms": 10.6,
+        "reported_latency_ms": 8.6,
+        "index_version": "rag-v1",
+        "mode": "hybrid",
+        "quarantined": 0,
+        "error_class": null
+      },
+      "B": {
+        "http": 200,
+        "ok": true,
+        "status": "ok",
+        "citation_count": 5,
+        "client_latency_ms": 40.49,
+        "reported_latency_ms": 29.95,
+        "index_version": "rag-v1",
+        "error": null,
+        "error_class": null,
+        "synthesis": null,
+        "replayed": false,
+        "freshness_status": "fresh",
+        "freshness_fresh": true,
+        "freshness_reasons": [],
+        "validation": {
+          "candidates": 5,
+          "grounded": 5,
+          "quarantined": 0,
+          "problems": []
+        },
+        "retrieval": {
+          "count": 5,
+          "mode": "hybrid",
+          "index_version": "rag-v1",
+          "quarantined": 0,
+          "latency_ms": 9.71,
+          "retries": {
+            "requests": 92,
+            "retried": 0,
+            "failed": 0
+          }
+        },
+        "quarantined": []
+      },
+      "comparison": {
+        "overlap": 5,
+        "a_only": 0,
+        "b_only": 0,
+        "identical_order_and_set": true,
+        "scores_identical": true
+      }
+    },
+    {
+      "query_id": "Q7",
+      "class": "known_reference",
+      "query": "Hermes MCP connection test",
+      "mode": "hybrid",
+      "top_k": 5,
+      "filters": {},
+      "A": {
+        "http": 200,
+        "ok": true,
+        "count": 5,
+        "client_latency_ms": 14.92,
+        "reported_latency_ms": 12.79,
+        "index_version": "rag-v1",
+        "mode": "hybrid",
+        "quarantined": 0,
+        "error_class": null
+      },
+      "B": {
+        "http": 200,
+        "ok": true,
+        "status": "ok",
+        "citation_count": 5,
+        "client_latency_ms": 43.47,
+        "reported_latency_ms": 28.5,
+        "index_version": "rag-v1",
+        "error": null,
+        "error_class": null,
+        "synthesis": null,
+        "replayed": false,
+        "freshness_status": "fresh",
+        "freshness_fresh": true,
+        "freshness_reasons": [],
+        "validation": {
+          "candidates": 5,
+          "grounded": 5,
+          "quarantined": 0,
+          "problems": []
+        },
+        "retrieval": {
+          "count": 5,
+          "mode": "hybrid",
+          "index_version": "rag-v1",
+          "quarantined": 0,
+          "latency_ms": 8.62,
+          "retries": {
+            "requests": 96,
+            "retried": 0,
+            "failed": 0
+          }
+        },
+        "quarantined": []
+      },
+      "comparison": {
+        "overlap": 5,
+        "a_only": 0,
+        "b_only": 0,
+        "identical_order_and_set": true,
+        "scores_identical": true
+      }
+    },
+    {
+      "query_id": "Q8",
+      "class": "filtered_requirements",
+      "query": "Berlin",
+      "mode": "hybrid",
+      "top_k": 5,
+      "filters": {
+        "types": [
+          "job_opening"
+        ]
+      },
+      "A": {
+        "http": 200,
+        "ok": true,
+        "count": 5,
+        "client_latency_ms": 13.98,
+        "reported_latency_ms": 11.94,
+        "index_version": "rag-v1",
+        "mode": "hybrid",
+        "quarantined": 0,
+        "error_class": null
+      },
+      "B": {
+        "http": 200,
+        "ok": true,
+        "status": "ok",
+        "citation_count": 5,
+        "client_latency_ms": 42.9,
+        "reported_latency_ms": 27.58,
+        "index_version": "rag-v1",
+        "error": null,
+        "error_class": null,
+        "synthesis": null,
+        "replayed": false,
+        "freshness_status": "fresh",
+        "freshness_fresh": true,
+        "freshness_reasons": [],
+        "validation": {
+          "candidates": 5,
+          "grounded": 5,
+          "quarantined": 0,
+          "problems": []
+        },
+        "retrieval": {
+          "count": 5,
+          "mode": "hybrid",
+          "index_version": "rag-v1",
+          "quarantined": 0,
+          "latency_ms": 10.41,
+          "retries": {
+            "requests": 100,
+            "retried": 0,
+            "failed": 0
+          }
+        },
+        "quarantined": []
+      },
+      "comparison": {
+        "overlap": 5,
+        "a_only": 0,
+        "b_only": 0,
+        "identical_order_and_set": true,
+        "scores_identical": true
+      }
+    },
+    {
+      "query_id": "Q9",
+      "class": "empty_result",
+      "query": "zzqqx flurblewump 99213 nonexistent",
+      "mode": "keyword",
+      "top_k": 5,
+      "filters": {},
+      "A": {
+        "http": 200,
+        "ok": true,
+        "count": 0,
+        "client_latency_ms": 10.63,
+        "reported_latency_ms": 8.06,
+        "index_version": "rag-v1",
+        "mode": "keyword",
+        "quarantined": 0,
+        "error_class": null
+      },
+      "B": {
+        "http": 200,
+        "ok": false,
+        "status": "no_evidence",
+        "citation_count": 0,
+        "client_latency_ms": 38.23,
+        "reported_latency_ms": 24.31,
+        "index_version": "rag-v1",
+        "error": "retrieval returned no candidates",
+        "error_class": "retrieval",
+        "synthesis": null,
+        "replayed": false,
+        "freshness_status": "fresh",
+        "freshness_fresh": true,
+        "freshness_reasons": [],
+        "validation": {
+          "candidates": 0,
+          "grounded": 0,
+          "quarantined": 0,
+          "problems": []
+        },
+        "retrieval": {
+          "count": 0,
+          "mode": "keyword",
+          "index_version": "rag-v1",
+          "quarantined": 0,
+          "latency_ms": 6.78,
+          "retries": {
+            "requests": 102,
+            "retried": 0,
+            "failed": 0
+          }
+        },
+        "quarantined": []
+      },
+      "comparison": {
+        "overlap": 0,
+        "a_only": 0,
+        "b_only": 0,
+        "identical_order_and_set": true,
+        "scores_identical": true
+      }
+    },
+    {
+      "query_id": "Q10",
+      "class": "empty_result_hybrid_control",
+      "query": "zzqqx flurblewump 99213 nonexistent",
+      "mode": "hybrid",
+      "top_k": 5,
+      "filters": {},
+      "A": {
+        "http": 200,
+        "ok": true,
+        "count": 5,
+        "client_latency_ms": 10.31,
+        "reported_latency_ms": 8.58,
+        "index_version": "rag-v1",
+        "mode": "hybrid",
+        "quarantined": 0,
+        "error_class": null
+      },
+      "B": {
+        "http": 200,
+        "ok": true,
+        "status": "ok",
+        "citation_count": 5,
+        "client_latency_ms": 47.82,
+        "reported_latency_ms": 27.95,
+        "index_version": "rag-v1",
+        "error": null,
+        "error_class": null,
+        "synthesis": null,
+        "replayed": false,
+        "freshness_status": "fresh",
+        "freshness_fresh": true,
+        "freshness_reasons": [],
+        "validation": {
+          "candidates": 5,
+          "grounded": 5,
+          "quarantined": 0,
+          "problems": []
+        },
+        "retrieval": {
+          "count": 5,
+          "mode": "hybrid",
+          "index_version": "rag-v1",
+          "quarantined": 0,
+          "latency_ms": 10.89,
+          "retries": {
+            "requests": 106,
+            "retried": 0,
+            "failed": 0
+          }
+        },
+        "quarantined": []
+      },
+      "comparison": {
+        "overlap": 5,
+        "a_only": 0,
+        "b_only": 0,
+        "identical_order_and_set": true,
+        "scores_identical": true
+      }
+    },
+    {
+      "query_id": "Q11",
+      "class": "coverage_cap",
+      "query": "Python",
+      "mode": "hybrid",
+      "top_k": 20,
+      "filters": {},
+      "A": {
+        "http": 200,
+        "ok": true,
+        "count": 15,
+        "client_latency_ms": 9.78,
+        "reported_latency_ms": 8.07,
+        "index_version": "rag-v1",
+        "mode": "hybrid",
+        "quarantined": 0,
+        "error_class": null
+      },
+      "B": {
+        "http": 200,
+        "ok": true,
+        "status": "ok",
+        "citation_count": 10,
+        "client_latency_ms": 31.25,
+        "reported_latency_ms": 22.75,
+        "index_version": "rag-v1",
+        "error": null,
+        "error_class": null,
+        "synthesis": null,
+        "replayed": false,
+        "freshness_status": "fresh",
+        "freshness_fresh": true,
+        "freshness_reasons": [],
+        "validation": {
+          "candidates": 15,
+          "grounded": 10,
+          "quarantined": 0,
+          "problems": []
+        },
+        "retrieval": {
+          "count": 15,
+          "mode": "hybrid",
+          "index_version": "rag-v1",
+          "quarantined": 0,
+          "latency_ms": 7.14,
+          "retries": {
+            "requests": 110,
+            "retried": 0,
+            "failed": 0
+          }
+        },
+        "quarantined": []
+      },
+      "comparison": {
+        "overlap": 10,
+        "a_only": 5,
+        "b_only": 0,
+        "identical_order_and_set": false,
+        "scores_identical": false
+      }
+    }
+  ]
+}

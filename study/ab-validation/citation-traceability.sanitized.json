@@ -1,0 +1,501 @@
+{
+  "schema": "rag-evidence-graph/study/citation-traceability/1",
+  "derived_from": "citation_traceability.json (raw capture withheld)",
+  "note": "Redacted summary. Object names, ids and space ids are dropped; the per-object verdicts that constitute the audit are kept. trace_field records whether the cited text was matched against the object's snippet or, for objects with no snippet, its name.",
+  "summary": {
+    "generated_at_utc": "2026-10-14T17:55:12Z",
+    "unique_cited_objects": 39,
+    "objects_read_ok": 39,
+    "objects_snippet_traceable": 39,
+    "type_mismatches": [],
+    "missing_objects": [],
+    "snippet_mismatches": [],
+    "invariant_violations": []
+  },
+  "objects": [
+    {
+      "type_key": null,
+      "cited_type_key": "job_opening",
+      "type_matches": true,
+      "object_exists": true,
+      "snippet_traceable": true,
+      "trace_field": "object_snippet",
+      "http": 200,
+      "cited_in": [
+        "Q5"
+      ]
+    },
+    {
+      "type_key": null,
+      "cited_type_key": "bookmark",
+      "type_matches": true,
+      "object_exists": true,
+      "snippet_traceable": true,
+      "trace_field": "object_name",
+      "http": 200,
+      "cited_in": [
+        "Q11"
+      ]
+    },
+    {
+      "type_key": null,
+      "cited_type_key": "job_opening",
+      "type_matches": true,
+      "object_exists": true,
+      "snippet_traceable": true,
+      "trace_field": "object_snippet",
+      "http": 200,
+      "cited_in": [
+        "Q11",
+        "Q4"
+      ]
+    },
+    {
+      "type_key": null,
+      "cited_type_key": "job_opening",
+      "type_matches": true,
+      "object_exists": true,
+      "snippet_traceable": true,
+      "trace_field": "object_snippet",
+      "http": 200,
+      "cited_in": [
+        "Q3"
+      ]
+    },
+    {
+      "type_key": null,
+      "cited_type_key": "job_opening",
+      "type_matches": true,
+      "object_exists": true,
+      "snippet_traceable": true,
+      "trace_field": "object_snippet",
+      "http": 200,
+      "cited_in": [
+        "Q1",
+        "Q10",
+        "Q11",
+        "Q6"
+      ]
+    },
+    {
+      "type_key": null,
+      "cited_type_key": "job_opening",
+      "type_matches": true,
+      "object_exists": true,
+      "snippet_traceable": true,
+      "trace_field": "object_snippet",
+      "http": 200,
+      "cited_in": [
+        "Q3"
+      ]
+    },
+    {
+      "type_key": null,
+      "cited_type_key": "job_opening",
+      "type_matches": true,
+      "object_exists": true,
+      "snippet_traceable": true,
+      "trace_field": "object_snippet",
+      "http": 200,
+      "cited_in": [
+        "Q7"
+      ]
+    },
+    {
+      "type_key": null,
+      "cited_type_key": "job_opening",
+      "type_matches": true,
+      "object_exists": true,
+      "snippet_traceable": true,
+      "trace_field": "object_snippet",
+      "http": 200,
+      "cited_in": [
+        "Q1"
+      ]
+    },
+    {
+      "type_key": null,
+      "cited_type_key": "job_opening",
+      "type_matches": true,
+      "object_exists": true,
+      "snippet_traceable": true,
+      "trace_field": "object_snippet",
+      "http": 200,
+      "cited_in": [
+        "Q11",
+        "Q5",
+        "Q6"
+      ]
+    },
+    {
+      "type_key": null,
+      "cited_type_key": "bookmark",
+      "type_matches": true,
+      "object_exists": true,
+      "snippet_traceable": true,
+      "trace_field": "object_name",
+      "http": 200,
+      "cited_in": [
+        "Q4"
+      ]
+    },
+    {
+      "type_key": null,
+      "cited_type_key": "job_opening",
+      "type_matches": true,
+      "object_exists": true,
+      "snippet_traceable": true,
+      "trace_field": "object_snippet",
+      "http": 200,
+      "cited_in": [
+        "Q2"
+      ]
+    },
+    {
+      "type_key": null,
+      "cited_type_key": "job_opening",
+      "type_matches": true,
+      "object_exists": true,
+      "snippet_traceable": true,
+      "trace_field": "object_snippet",
+      "http": 200,
+      "cited_in": [
+        "Q11",
+        "Q5"
+      ]
+    },
+    {
+      "type_key": null,
+      "cited_type_key": "area",
+      "type_matches": true,
+      "object_exists": true,
+      "snippet_traceable": true,
+      "trace_field": "object_name",
+      "http": 200,
+      "cited_in": [
+        "Q2"
+      ]
+    },
+    {
+      "type_key": null,
+      "cited_type_key": "job_opening",
+      "type_matches": true,
+      "object_exists": true,
+      "snippet_traceable": true,
+      "trace_field": "object_snippet",
+      "http": 200,
+      "cited_in": [
+        "Q2"
+      ]
+    },
+    {
+      "type_key": null,
+      "cited_type_key": "job_opening",
+      "type_matches": true,
+      "object_exists": true,
+      "snippet_traceable": true,
+      "trace_field": "object_snippet",
+      "http": 200,
+      "cited_in": [
+        "Q4"
+      ]
+    },
+    {
+      "type_key": null,
+      "cited_type_key": "job_opening",
+      "type_matches": true,
+      "object_exists": true,
+      "snippet_traceable": true,
+      "trace_field": "object_snippet",
+      "http": 200,
+      "cited_in": [
+        "Q1",
+        "Q3",
+        "Q6"
+      ]
+    },
+    {
+      "type_key": null,
+      "cited_type_key": "job_opening",
+      "type_matches": true,
+      "object_exists": true,
+      "snippet_traceable": true,
+      "trace_field": "object_snippet",
+      "http": 200,
+      "cited_in": [
+        "Q8"
+      ]
+    },
+    {
+      "type_key": null,
+      "cited_type_key": "evidence",
+      "type_matches": true,
+      "object_exists": true,
+      "snippet_traceable": true,
+      "trace_field": "object_snippet",
+      "http": 200,
+      "cited_in": [
+        "Q7"
+      ]
+    },
+    {
+      "type_key": null,
+      "cited_type_key": "job_opening",
+      "type_matches": true,
+      "object_exists": true,
+      "snippet_traceable": true,
+      "trace_field": "object_snippet",
+      "http": 200,
+      "cited_in": [
+        "Q1"
+      ]
+    },
+    {
+      "type_key": null,
+      "cited_type_key": "job_opening",
+      "type_matches": true,
+      "object_exists": true,
+      "snippet_traceable": true,
+      "trace_field": "object_snippet",
+      "http": 200,
+      "cited_in": [
+        "Q10"
+      ]
+    },
+    {
+      "type_key": null,
+      "cited_type_key": "project",
+      "type_matches": true,
+      "object_exists": true,
+      "snippet_traceable": true,
+      "trace_field": "object_snippet",
+      "http": 200,
+      "cited_in": [
+        "Q4"
+      ]
+    },
+    {
+      "type_key": null,
+      "cited_type_key": "job_opening",
+      "type_matches": true,
+      "object_exists": true,
+      "snippet_traceable": true,
+      "trace_field": "object_snippet",
+      "http": 200,
+      "cited_in": [
+        "Q3"
+      ]
+    },
+    {
+      "type_key": null,
+      "cited_type_key": "job_opening",
+      "type_matches": true,
+      "object_exists": true,
+      "snippet_traceable": true,
+      "trace_field": "object_snippet",
+      "http": 200,
+      "cited_in": [
+        "Q11",
+        "Q2",
+        "Q8"
+      ]
+    },
+    {
+      "type_key": null,
+      "cited_type_key": "job_opening",
+      "type_matches": true,
+      "object_exists": true,
+      "snippet_traceable": true,
+      "trace_field": "object_snippet",
+      "http": 200,
+      "cited_in": [
+        "Q11",
+        "Q5"
+      ]
+    },
+    {
+      "type_key": null,
+      "cited_type_key": "bookmark",
+      "type_matches": true,
+      "object_exists": true,
+      "snippet_traceable": true,
+      "trace_field": "object_name",
+      "http": 200,
+      "cited_in": [
+        "Q10"
+      ]
+    },
+    {
+      "type_key": null,
+      "cited_type_key": "job_opening",
+      "type_matches": true,
+      "object_exists": true,
+      "snippet_traceable": true,
+      "trace_field": "object_snippet",
+      "http": 200,
+      "cited_in": [
+        "Q8"
+      ]
+    },
+    {
+      "type_key": null,
+      "cited_type_key": "job_opening",
+      "type_matches": true,
+      "object_exists": true,
+      "snippet_traceable": true,
+      "trace_field": "object_snippet",
+      "http": 200,
+      "cited_in": [
+        "Q3",
+        "Q4"
+      ]
+    },
+    {
+      "type_key": null,
+      "cited_type_key": "job_opening",
+      "type_matches": true,
+      "object_exists": true,
+      "snippet_traceable": true,
+      "trace_field": "object_snippet",
+      "http": 200,
+      "cited_in": [
+        "Q8"
+      ]
+    },
+    {
+      "type_key": null,
+      "cited_type_key": "job_opening",
+      "type_matches": true,
+      "object_exists": true,
+      "snippet_traceable": true,
+      "trace_field": "object_snippet",
+      "http": 200,
+      "cited_in": [
+        "Q7"
+      ]
+    },
+    {
+      "type_key": null,
+      "cited_type_key": "job_opening",
+      "type_matches": true,
+      "object_exists": true,
+      "snippet_traceable": true,
+      "trace_field": "object_snippet",
+      "http": 200,
+      "cited_in": [
+        "Q11",
+        "Q8"
+      ]
+    },
+    {
+      "type_key": null,
+      "cited_type_key": "job_opening",
+      "type_matches": true,
+      "object_exists": true,
+      "snippet_traceable": true,
+      "trace_field": "object_snippet",
+      "http": 200,
+      "cited_in": [
+        "Q11",
+        "Q2"
+      ]
+    },
+    {
+      "type_key": null,
+      "cited_type_key": "job_opening",
+      "type_matches": true,
+      "object_exists": true,
+      "snippet_traceable": true,
+      "trace_field": "object_snippet",
+      "http": 200,
+      "cited_in": [
+        "Q1"
+      ]
+    },
+    {
+      "type_key": null,
+      "cited_type_key": "note",
+      "type_matches": true,
+      "object_exists": true,
+      "snippet_traceable": true,
+      "trace_field": "object_snippet",
+      "http": 200,
+      "cited_in": [
+        "Q7"
+      ]
+    },
+    {
+      "type_key": null,
+      "cited_type_key": "bookmark",
+      "type_matches": true,
+      "object_exists": true,
+      "snippet_traceable": true,
+      "trace_field": "object_name",
+      "http": 200,
+      "cited_in": [
+        "Q6"
+      ]
+    },
+    {
+      "type_key": null,
+      "cited_type_key": "job_opening",
+      "type_matches": true,
+      "object_exists": true,
+      "snippet_traceable": true,
+      "trace_field": "object_snippet",
+      "http": 200,
+      "cited_in": [
+        "Q11"
+      ]
+    },
+    {
+      "type_key": null,
+      "cited_type_key": "bookmark",
+      "type_matches": true,
+      "object_exists": true,
+      "snippet_traceable": true,
+      "trace_field": "object_name",
+      "http": 200,
+      "cited_in": [
+        "Q10"
+      ]
+    },
+    {
+      "type_key": null,
+      "cited_type_key": "chat_derived",
+      "type_matches": true,
+      "object_exists": true,
+      "snippet_traceable": true,
+      "trace_field": "object_name",
+      "http": 200,
+      "cited_in": [
+        "Q7"
+      ]
+    },
+    {
+      "type_key": null,
+      "cited_type_key": "bookmark",
+      "type_matches": true,
+      "object_exists": true,
+      "snippet_traceable": true,
+      "trace_field": "object_name",
+      "http": 200,
+      "cited_in": [
+        "Q10"
+      ]
+    },
+    {
+      "type_key": null,
+      "cited_type_key": "job_opening",
+      "type_matches": true,
+      "object_exists": true,
+      "snippet_traceable": true,
+      "trace_field": "object_snippet",
+      "http": 200,
+      "cited_in": [
+        "Q5",
+        "Q6"
+      ]
+    }
+  ]
+}

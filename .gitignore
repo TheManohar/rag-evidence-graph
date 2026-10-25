@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Runtime state produced by the adapter in local use
+*.sqlite3
+*.sqlite3-journal
+*.jsonl
+
+# Study working files: raw captures stay private, only curated summaries are committed
+study/_raw/
+*.local.env
+.env
+
+# Private redaction map: never commit (it would republish what it hides)
+*.local.json
